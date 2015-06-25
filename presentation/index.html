@@ -4,10 +4,10 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>Your Title</title>
+		<title>ISCEV 2015</title>
 
-		<meta name="description" content="Your description">
-		<meta name="author" content="Your Name">
+		<meta name="description" content="Retinal structure and function in Type 1 Diabetes - ISCEV 2015">
+		<meta name="author" content="Tom Wright">
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -19,6 +19,9 @@
 
 		<!-- For syntax highlighting -->
 		<link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
+
+		<!-- Presentation specific formats -->
+		<link rel="stylesheet" href="css/mystyle.css">
 
 		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
 		<script>
@@ -38,56 +41,228 @@
 			<div class="slides">
                 
 <section>
-    <h1>Your Title</h1>
-    <h3>Your sub-title</h3>
-</section>
-<section data-markdown>
-    <script type="text/template">
-        ## Testing Markdown
-
-        This _should_ be __bold__ and this should be a [link](https://github.com/mbrochh/reveal-template).
-
-        ### Heading 3
-
-        * A list
-        * With three
-        * items
-    </script>
+  <h2>Retinal Function and Structure in Type 1 Diabetes</h2>
+  <br/>
+  <h4>Evidence for an asymmetrical effect of Type 1 diabetes on retinal structure and function</h4>
+  <br/>
+  <h5>Tom Wright, Alan Poon, Ahmed Salem,<br/> Carol Westall</h5>
 </section>
 <section>
-    <h2>Testing code snippets</h2>
-    <pre><code>
-    import os
-    path = os.path.join('foo', 'bar')
-    def do_something(path):
-        return path
-    </code></pre>
+    <h2>Diabetes and the Retina</h2>
+    <ul>
+      <li class="fragment">Retinal function affected before clinical retinopathy</li>
+      <ul class="fragment">
+        <li>Colour vision deficits</li>
+        <li>mfERG delays</li>
+      </ul>
+      <li class="fragment">Retinal structure affected before clinical retinopathy</li>
+        <ul class="fragment">
+          <li>Increased capillary tortuosity</li>
+          <li>Venular thinning</li>
+          <li>Decreased photoreceptor density</li>
+        </ul>
+      </ul>
 </section>
 <section>
-    <section data-background="#ff0000" data-markdown>
-        <script type="text/template">
-            ## Testing backgrounds
-
-            Now we are red
-        </script>
-    </section>
-    <section data-background="#00ff00" data-markdown>
-        <script type="text/template">
-            ## Testing backgrounds
-
-            Now we are green
-        </script>
-    </section>
-    <section data-background="#0000ff" data-markdown>
-        <script type="text/template">
-            ## Testing backgrounds
-
-            Now we are blue
-
-            <small>dabadi dabadai...</small>
-        </script>
-    </section>
+  <section>
+    <h2>Multifocal ERG</h2>
+      <div>
+        <span id='cell_left'>
+          <img alt="mfergSystem" src="imgs/avg_mferg.svg">
+        </span>
+        <span id='cell_right'>
+          <ul>
+            <li>Veris&trade; FMSII</li>
+            <li>103 Hexagons</li>
+            <li>M = 2<sup>15</sup> -1</li>
+            <li>filter 10-100Hz</li>
+          </ul>
+        </span>
+      </div>
+  </section>
 </section>
+<section>
+  <section>
+    <h2>Adaptive Optics</h2>
+      <div>
+        <span id='cell_left'>
+          <img alt=ao_cartoon src='imgs/ao_cartoon.jpg'/>
+        </span>
+        <span id='cell_right'>
+          <ul>
+            <li>Physical Systems Inc.</li>
+            <li>Scanning laser ophthalmoscope</li>
+            <li>1024 x 1000 pixel resolution</li>
+            <li>23 frames per second</li>
+          </ul>
+        </span>
+      </div>
+  </section>
+  <section>
+    <video id='sampleMovie' width="500" height="500" preload controls loop='true' style="float:left; margin: 0 15px 15px 0; width:45%">
+      <source src="vids/AOOrig.mov" />
+    </video>
+    <video id='sampleMovie' width="500" height="500" preload controls loop='true' style="float:right; margin: 0 0 15px 15px; width:45%">
+      <source src="vids/AOsample_stable_h264.mov" />
+    </video>
+  </section>
+  <section>
+    <img alt='AO Imaging Protocol' src='imgs/ao_imaging.png'/>
+  </section>
+</section>
+<section>
+  <section>
+    <h2>Population</h2>
+    <ul>
+      <li>Adolescents &amp; Young adults</li>
+      <li>Diabetes for at least 5 years</li>
+      <li>No retinopathy</li>
+      <li>Blood glucose between 4 and 10 mmol / l</li>
+      <li>Random eye selected</li>
+    </ul>
+  </section>
+  <section>
+    <h2>mfERG Study</h2>
+    <table>
+      <tr>
+        <th>&nbsp</th>
+        <th>Diabetic</th>
+        <th>Control</th>
+      </tr>
+      <tr>
+        <td>N</td>
+        <td>54 (32 f, 22 m)</td>
+        <td>71 (48 f, 23 m)</td>
+      </tr>
+        <td>Age</td>
+        <td>15.8 &plusmn; 2</td>
+        <td>17.6 &plusmn; 5</td>
+      </tr>
+      <tr>
+        <td>Duration T1D</td>
+        <td>8.3 &plusmn; 4</td>
+        <td>&nbsp;</td>
+      </tr>
+    </table>
+    <p id='note'>Some participants tested more than once <b>Total tests:180</b></p>
+  </section>
+  <section>
+    <h2>AO Study</h2>
+    <table>
+      <tr>
+        <th>&nbsp</th>
+        <th>Diabetic</th>
+        <th>Control</th>
+      </tr>
+      <tr>
+        <td>N</td>
+        <td>29 (18 f, 11 m)</td>
+        <td>44 (32 f, 12 m)</td>
+      </tr>
+        <td>Age</td>
+        <td>19.0 &plusmn; 3</td>
+        <td>18.5 &plusmn; 3</td>
+      </tr>
+      <tr>
+        <td>Duration T1D</td>
+        <td>10.7 &plusmn; 4</td>
+        <td>&nbsp;</td>
+      </tr>
+    </table>
+    <p id='note'>Some participants tested more than once <b>Total tests:93</b></p>
+    <p id='note'>Not all quadrants imaged at every test:<br/>
+    Success rates: T1D = 56%, Controls = 58%  </p>
+  </section>
+</section>
+<section>
+  <section>
+    <h4>mferg P1 amplitude by hemisphere</h4>
+    <table>
+      <tr>
+        <td width="10%" style="vertical-align:top;">
+          <img alt="mferg_avg" src="imgs/mferg_avg.svg">
+        </td>
+        <td>
+          <img alt="mferg_hemisphere_amp" src="imgs/mferg_hemisphere_amp.svg">
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          Interaction:Diabetic * Hemisphere p=0.05
+        </td>
+      </tr>
+    </table>
+  </section>
+  <section>
+    <h4>inter-hemisphere differences with age (mferg)</h4>
+    <span style='float:left;width:10%;'>
+      <img alt="mferg_avg" src="imgs/mferg_avg.svg">
+    </span>
+    <span>
+      <img alt="mferg_hemisphere_diff_age" src="imgs/mferg_diff_age.svg">
+    </span>
+  </section>
+</section>
+<section>
+  <section>
+    <h4>Cone density by hemisphere</h4>
+    <div>
+      <table>
+        <tr>
+          <td>
+            <img alt="mferg_hemisphere_amp" src="imgs/ao_hemisphere_count.svg">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Interaction: Diabetic * Hemisphere p=0.08
+          </td>
+        </tr>
+      </table>
+    </div>
+  </section>
+  <section>
+    <h4>inter-hemisphere differences with age (cone density)</h4>
+    <span>
+      <img alt="ao_hemisphere_diff_age" src="imgs/ao_diff_age.svg">
+    </span>
+  </section>
+</section>
+<section>
+  <section>
+  <h2>mfERG vs Cone Density</h2>
+    <img alt="mferg_ao_change_controls_only" src="imgs/ao_mferg_diff.svg" >
+  </section>
+  <section>
+    <h2>mfERG vs Cone Density</h2>
+    <img alt="mferg_ao_change" src="imgs/ao_mferg_diff_final.svg">
+  </section>
+</section>
+<section>
+  <h2>Summary</h2>
+  <ul>
+    <li class=fragment>Retinal Function</li>
+    <ul class=fragment>
+      <li>mfERG P1 amplitude is reduced</li>
+      <li>Reduction affects the Nasal retina</li>
+      <li>Reduction progresses with increasing disease duration</li>
+    </ul>
+    <li class=fragment>Retinal Structure</li>
+    <ul class=fragment>
+      <li>In controls, cone density is increased in the nasal retina</li>
+      <li>Nasal cone density is decreased in patients with Type 1 diabetes</li>
+    </ul>
+  </ul>
+</section>
+<section>
+  <h2>Thank you</h2>
+  <span>
+    Research supported by:
+    <br/>
+    <img alt="cfi_logo" src="imgs/cfi_logo.png" height=150px style="background-color:white">
+    <br/>
+    <img alt="cihr_logo" src="imgs/cihr_logo.jpg" height=150px>
+  </span>
 
 			</div>
 
@@ -116,7 +291,8 @@
 					{ src: 'reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 					{ src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
 					{ src: 'reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-					{ src: 'reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					{ src: 'reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'reveal.js/plugin/math/math.js', async: true }
 					// { src: 'reveal.js/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
 					// { src: 'reveal.js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
 				]

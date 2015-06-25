@@ -1,0 +1,14 @@
+#cell_left {float:left; width: 50%;}
+#cell_right {float:right; width: 50%;}
+#note {font-style: italic;}
+.container {
+    float:top;
+    width: 90%;
+    height: 75%;
+}
+
+/* resize images */
+.container img {
+    width: 100%;
+    height: auto;
+}
